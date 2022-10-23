@@ -1,0 +1,19 @@
+.card:hover {
+    transform: scale(1.2) translateY(-50px);
+    transition: 0.5s;
+}
+
+.redes__hover:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.fotos:hover {
+    transform: scale(1.5) translateY(-10px);
+        transition: 0.5s;
+}
+
+.videos:hover {
+    transform: scale(1.2) translateY(-10px);
+    transition: 0.5s;
+}

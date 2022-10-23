@@ -1,0 +1,31 @@
+
+.hero { 
+    background-image: url(./../../assets/images/fondoo.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    h2 {
+        font-size: 23px;
+        background-color:rgba(173, 216, 230, 0.400);
+        border-radius: 5px;
+        }
+    }
+
+
+
+button {
+a {
+    font-weight: bold;
+    color:firebrick;
+}
+}
+
+.footer {
+    @extend .navbar;
+    div {
+        h6 {
+            font-size: 16px;
+            font-style:oblique;
+        }
+    }
+}

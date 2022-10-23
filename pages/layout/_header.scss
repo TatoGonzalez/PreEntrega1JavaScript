@@ -1,0 +1,35 @@
+$estilos: (
+    color:lightblue,
+    font: 20px,
+    padding: 10px,
+    margin: 15%,
+);
+    @mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+    .navbar {
+        background-color: map-get($map: $estilos, $key: color);
+        
+        .logo__nav {
+            img {
+                @include sizes (50px, 50px);               
+            }
+        }      
+        .navbar-brand { 
+            font-size: map-get($map: $estilos, $key: font);
+            margin-right: map-get($map: $estilos, $key: margin)
+        }
+        .nav-item {
+            font-size: map-get($map: $estilos, $key: font);
+            padding: map-get($map: $estilos, $key: padding);
+        }
+    }
+
+    @media screen and (max-width: 310px) {
+                .logo__mobile {
+                    display: none;
+                }
+
+    }
