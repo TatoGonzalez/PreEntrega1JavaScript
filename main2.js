@@ -11,6 +11,7 @@ if (personas > 0) {
 }
 else {
     alert("No ingreso un numero valido.")
+    presupuestoFinal = false;
 }
 
 
