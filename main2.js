@@ -25,7 +25,7 @@ let otro = 2;
 let tipoEvento = Number(prompt( "Elija el tipo de evento a realizar - Ingrese numero que corresponda \n1- Casamiento \n2- Cumpleaños \n3- Empresarial \n4- Otro"));
 
 
-while (presupuestoFinal = true) {
+while (presupuestoFinal == true) {
     switch (tipoEvento) {
         case 1:
             alert("El presupuesto aproximado para tu evento es " + "$" + (costo * casamiento) + ". Gracias por elegirnos " + nombre + "! " + " Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!" );
@@ -42,5 +42,6 @@ while (presupuestoFinal = true) {
     };
 };
 
+presupuestoFinal = false
 
 alert("Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!")
