@@ -62,5 +62,11 @@ const contacto = {
 
 alert( "Los datos ingresados son " + "Nombres: " + contacto.nombres + ". Email: " + contacto.email + ". Telefono: " + contacto.telefono + ". En la brevedad nos contactaremos con ustedes para brindar toda la informacion sobre nuestro servicio y realizar un presupuesto detallado")
 
+const usuario = [ ];
 
+usuario.push (nombres)
+usuario.push (email)
+usuario.push (telefono)
+
+alert ( "Su usuario fue creado correctamente en nuestro sistema  " + usuario)
 
