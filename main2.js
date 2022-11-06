@@ -29,19 +29,38 @@ while (presupuestoFinal == true) {
     switch (tipoEvento) {
         case 1:
             alert("El presupuesto aproximado para tu evento es " + "$" + (costo * casamiento) + ". Gracias por elegirnos " + nombre + "! " + " Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!" );
+            presupuestoFinal = false
             break;
         case 2:
             alert("El presupuesto aproximado para tu evento es " + "$" +(costo * cumpleanios) + ". Gracias por elegirnos " + nombre + "! "  + " Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!");
+            presupuestoFinal = false
             break;
         case 3:
             alert("El presupuesto aproximado para tu evento es " + "$" + (costo * empresarial) + ". Gracias por elegirnos " + nombre + "! " + " Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!" );
+            presupuestoFinal = false
             break;
         case 4:
             alert("El presupuesto aproximado para tu evento es " + "$" + (costo * otro) + ". Gracias por elegirnos " + nombre + "! " + " Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!");
+            presupuestoFinal = false
             break;
     };
 };
 
-presupuestoFinal = false
+presupuestoFinal = true
 
-alert("Contactate a nuestro WhatsApp o mediante nuestras Redes Sociales para recibir atencion personalizada!")
+alert( "Le vamos a solicitar datos de contacto para que un asesor se comunique con usted y poder brindarle una atencion personalizada" )
+
+let nombres = prompt( "Ingrese su nombre y apellido")
+let email = prompt( "Ingrese su direccion de email")
+let telefono = prompt( "Ingrese su numero de telefono con caracteristica y 15 si corresponde")
+
+const contacto = {
+    nombres: nombres,
+    email: email,
+    telefono: telefono,
+}
+
+alert( "Los datos ingresados son " + "Nombres: " + contacto.nombres + ". Email: " + contacto.email + ". Telefono: " + contacto.telefono + ". En la brevedad nos contactaremos con ustedes para brindar toda la informacion sobre nuestro servicio y realizar un presupuesto detallado")
+
+
+
